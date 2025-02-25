@@ -1,11 +1,11 @@
-import { NavbarItem } from "@/app/_components/navbar/navbar-item";
+import DesktopItems from "@/app/_components/navbar/desktop-items";
+import MobileItems from "@/app/_components/navbar/mobile-items";
 
 export default function NavbarItems() {
   return (
-    <ul className="flex text-lg">
-      <NavbarItem text="Начало" link="/" />
-      <NavbarItem text="За мен" link="/za-men" />
-      <NavbarItem text="Контакти" link="/contacts" />
-    </ul>
+    <nav>
+      <DesktopItems className="hidden md:flex text-lg" />
+      <MobileItems className="block md:hidden text-lg" />
+    </nav>
   );
 }

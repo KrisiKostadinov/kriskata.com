@@ -7,9 +7,10 @@ export default function DisplayLogo() {
       <Image
         src={"/logo.png"}
         alt={process.env.NEXT_PUBLIC_WEBSITE_TITLE as string}
-        width={200}
-        height={40}
+        width={600}
+        height={120}
         priority
+        className="w-[200px]"
       />
     </Link>
   );
