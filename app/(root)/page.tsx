@@ -7,6 +7,7 @@ import PriceAndBudget from "@/app/(root)/_components/price-and-budget";
 import TechStack from "@/app/(root)/_components/tech-stack";
 import Backups from "@/app/(root)/_components/backups";
 import GoogleAnalitycs from "@/app/(root)/_components/google-analitycs";
+import GoogleSearchConsole from "@/app/(root)/_components/google-search-console";
 
 const metaTitle = `Изработка на сайтове и приложения ${process.env.SEPARATOR} ${process.env.NEXT_PUBLIC_WEBSITE_TITLE}`;
 
@@ -29,6 +30,7 @@ export default function HomePage() {
       <TechStack />
       <Backups />
       <GoogleAnalitycs />
+      <GoogleSearchConsole />
     </PageWrapper>
   );
 }
