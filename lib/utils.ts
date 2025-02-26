@@ -21,3 +21,15 @@ export function formatPhoneNumber(phoneNumber: string): string {
 
   return phoneNumber;
 }
+
+export function formatPrice(
+  price: number,
+  currency: string = "BGN"
+): string {
+  return new Intl.NumberFormat("bg-BG", {
+    style: "currency",
+    currency: currency,
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(price);
+}

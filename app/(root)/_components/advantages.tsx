@@ -5,7 +5,7 @@ import PageHeading from "@/app/_components/page-heading";
 
 export default function Advantages() {
   return (
-    <section className="bg-white space-y-10 pb-10">
+    <section className="bg-white space-y-10">
       <PageHeading tag={"h2"} text="Предимства на персонализираните сайтове" />
       <div className="relative z-20">
         <p className="text-lg text-center max-w-3xl mx-auto py-10 px-5 md:p-0">
@@ -72,6 +72,7 @@ export default function Advantages() {
               text="Свържете се с мен"
               link="/contacts"
               icon="Phone"
+              className="mx-auto"
             />
           </div>
         </div>
