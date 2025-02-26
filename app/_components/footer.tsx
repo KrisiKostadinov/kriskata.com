@@ -29,12 +29,12 @@ export default function Footer() {
               <FooterLink
                 title={`За мен ${suffix}`}
                 text="За мен"
-                link="/za-men"
+                link="/about"
               />
               <FooterLink
                 title={`Контакти ${suffix}`}
                 text="Контакти"
-                link="/kontakti"
+                link="/contacts"
               />
             </ul>
           </li>
@@ -78,7 +78,7 @@ export default function Footer() {
               <FooterLink
                 title={process.env.NEXT_PUBLIC_WEBSITE_TITLE as string}
                 text="Кристиан Костадинов"
-                link="/za-men"
+                link="/about"
               />
             </ul>
           </li>

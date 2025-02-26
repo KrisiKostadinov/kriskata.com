@@ -6,7 +6,7 @@ export default function DesktopItems({ ...props }: DesktopItemsProps) {
   return (
     <ul {...props}>
       <NavbarItem text="Начало" link="/" />
-      <NavbarItem text="За мен" link="/za-men" />
+      <NavbarItem text="За мен" link="/about" />
       <NavbarItem text="Контакти" link="/contacts" />
     </ul>
   );

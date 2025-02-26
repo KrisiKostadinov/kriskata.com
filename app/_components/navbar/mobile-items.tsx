@@ -44,7 +44,7 @@ export default function MobileItems({ ...props }: MobileItemsProps) {
           />
           <NavbarItem
             text="За мен"
-            link="/za-men"
+            link="/about"
             className="bg-gray-100 rounded"
             onClick={() => setOpen(!open)}
           />
