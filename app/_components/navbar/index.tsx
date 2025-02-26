@@ -6,7 +6,7 @@ export default function Navbar() {
     <header>
       <div className="bg-white w-full h-[60px] border-b flex justify-between items-center px-5 md:p-0">
         <div className="container mx-auto w-full h-full flex justify-between items-center">
-          <DisplayLogo />
+          <DisplayLogo src="/logo.png" />
           <NavbarItems />
         </div>
       </div>
