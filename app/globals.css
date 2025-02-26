@@ -67,7 +67,9 @@
   }
 }
 
-
+.grid-reverse {
+  direction: rtl;
+}
 
 @layer base {
   * {

@@ -5,14 +5,14 @@ import Image from "next/image";
 export default function PriceAndBudget() {
   return (
     <section className="bg-white space-y-10 pt-10">
-      <div className="container mx-auto grid md:grid-cols-2 sm:gap-10 items-center">
+      <div className="container mx-auto lg:px-10 grid lg:grid-cols-2 sm:gap-10 items-center">
         <Image
           src={"/images/price-and-budget.png"}
           alt="Цена и бюджет"
           width={900}
           height={600}
           priority
-          className="max-md:max-w-xs max-md:mx-auto"
+          className="max-lg:max-w-xs max-lg:mx-auto"
         />
         <div className="text-lg py-10 px-5 md:p-0 space-y-5 max-sm:text-center">
           <h2 className="text-3xl font-semibold">Цена и бюджет</h2>
@@ -24,18 +24,18 @@ export default function PriceAndBudget() {
             Ако имате нужда от малък уеб сайт с до 5 страници, който да Ви служи
             като представяне на Вашия бизнес или услуга, то тогава цената ще е
             от <span>{formatPrice(300)}</span> до{" "}
-            <span>{formatPrice(600)}</span> в зависимост от сложността и размера
+            <span>{formatPrice(600)}</span>, в зависимост от сложността и размера
             на страниците на сайта.
           </p>
           <p>
-            Ако имате нужда изработка на онлайн система за поръчки, резервации,
+            Ако имате нужда от изработка на онлайн система за поръчки, резервации,
             управление на потребители, каталог, електронна търговия, то тогава
             цената може да варира от {formatPrice(100)} до {formatPrice(2000)}{" "}
             или повече.
           </p>
           <p>
             Ако решите да работите с мен, ще Ви осигуря безплатен хостинг за
-            сайта на компанията Vercel. Това означава, че няма да се налага да
+            сайта Ви на компанията Vercel. Това означава, че няма да се налага да
             плащате за място, където да съхранявате файловете на сайта.
             Единственото нещо, което ще трябва да платите, е домейнът за сайта,
             който важи за една година. Така ще спестите пари и ще имате всичко,

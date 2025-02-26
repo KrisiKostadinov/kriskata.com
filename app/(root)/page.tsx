@@ -4,6 +4,7 @@ import PageWrapper from "@/app/_components/page-wrapper";
 import Hero from "@/app/(root)/_components/hero";
 import Advantages from "@/app/(root)/_components/advantages";
 import PriceAndBudget from "@/app/(root)/_components/price-and-budget";
+import TechStack from "@/app/(root)/_components/tech-stack";
 
 const metaTitle = `Изработка на сайтове и приложения ${process.env.SEPARATOR} ${process.env.NEXT_PUBLIC_WEBSITE_TITLE}`;
 
@@ -23,6 +24,7 @@ export default function HomePage() {
       <Hero />
       <Advantages />
       <PriceAndBudget />
+      <TechStack />
     </PageWrapper>
   );
 }
