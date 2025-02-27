@@ -11,7 +11,7 @@ export default function Hero() {
           alt="Изработка на сайтове и уеб приложения"
           fill
           priority
-          className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-40"
+          className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-10"
         />
         <div className="text-white max-w-[900px] text-center space-y-10 px-5 md:px-0 z-10">
           <p className="text-lg md:text-xl">

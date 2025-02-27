@@ -62,7 +62,7 @@ export default function Backups() {
           </p>
         </div>
         <Image
-          src={"/images/backups.png"}
+          src={"/illustrations/backups.svg"}
           alt="Резервни копия на сайта"
           width={900}
           height={600}

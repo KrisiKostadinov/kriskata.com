@@ -7,7 +7,7 @@ export default function PriceAndBudget() {
     <section className="bg-white space-y-10 pt-10">
       <div className="container mx-auto lg:px-10 grid lg:grid-cols-2 sm:gap-10 items-center">
         <Image
-          src={"/images/price-and-budget.png"}
+          src={"/illustrations/price-and-budget.svg"}
           alt="Цена и бюджет"
           width={900}
           height={600}

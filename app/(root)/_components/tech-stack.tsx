@@ -43,7 +43,7 @@ export default function TechStack() {
           </p>
         </div>
         <Image
-          src={"/images/tech-stack.png"}
+          src={"/illustrations/tech-solutions.svg"}
           alt="Технически решения"
           width={900}
           height={600}

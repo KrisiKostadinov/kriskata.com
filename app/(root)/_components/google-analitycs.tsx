@@ -6,15 +6,11 @@ import PageLinkIcon from "@/app/_components/page-link-icon";
 export default function GoogleAnalitycs() {
   return (
     <section className="bg-white py-10">
-      <PageHeading text="Интеграция на Google Analytics" tag="h2">
-        <div className="text-3xl font-extrabold py-10 text-center text-white bg-green-500">
-          БЕЗПЛАТНО
-        </div>
-      </PageHeading>
+      <PageHeading text="Интеграция на Google Analytics" tag="h2" />
       <div className="container mx-auto lg:px-10 grid lg:grid-cols-2 sm:gap-10 items-center">
         <div className="text-lg lg:mt-10 py-10 px-5 md:p-0 space-y-5 max-sm:text-center max-lg:order-2">
           <p>
-            Всеки клиент, който заяви изработка на уебсайт от мен, ще получи
+            Всеки клиент, който заяви изработка на уеб сайт от мен, ще получи
             безплатна интеграция с Google Analytics. А какво представлява Google
             Analytics? Това е безплатна онлайн платформа, предназначена да
             улесни проследяването и анализа на трафика към Вашия сайт.
