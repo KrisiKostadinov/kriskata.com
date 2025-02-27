@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <header className="relative w-full h-[600px] flex flex-col gap-10">
-      <div className="w-full h-full flex justify-center items-center bg-black relative">
+    <header className="relative w-full min-h-[600px] py-10flex flex-col gap-10">
+      <div className="w-full h-full flex justify-center items-center bg-black relative py-10">
         <Image
           src="/images/programming.png"
           alt="Фоново изображение - уеб програмиране"
           width={1920}
           height={600}
           priority
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-60"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-20"
         />
         <div className="text-white max-w-[900px] text-center space-y-10 px-5 md:px-0 z-10">
           <Image

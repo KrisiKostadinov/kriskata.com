@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 
 import PageWrapper from "@/app/_components/page-wrapper";
+import Hero from "@/app/contacts/_components/hero";
+import ContactsInfo from "@/app/contacts/_components/contacts-info";
 
 const metaTitle = `Контакти ${process.env.SEPARATOR} ${process.env.NEXT_PUBLIC_WEBSITE_TITLE}`;
 
@@ -17,7 +19,8 @@ export const metadata: Metadata = {
 export default function ContactsPage() {
   return (
     <PageWrapper>
-      <h1>Кантакти</h1>
+      <Hero />
+      <ContactsInfo />
     </PageWrapper>
   );
 }
