@@ -6,7 +6,7 @@ import PageLinkIcon from "@/app/_components/page-link-icon";
 export default function Portfolio() {
   return (
     <section className="bg-white">
-      <PageHeading text="Малка част от мойте проекти" tag="h2" />
+      <PageHeading text="Малка част от моите проекти" tag="h2" />
       <div className="container mx-auto py-5 lg:py-10 text-lg text-center md:text-xl max-lg:px-5">
         <ul className="grid lg:grid-cols-2 gap-10">
           <DisplayItem
