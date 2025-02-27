@@ -4,6 +4,7 @@ import PageWrapper from "@/app/_components/page-wrapper";
 import Hero from "@/app/about/_components/hero";
 import Portfolio from "@/app/about/_components/portfolio";
 import TechStack from "@/app/about/_components/tech-stack";
+import WorkProcess from "@/app/about/_components/word-process";
 
 const metaTitle = `За мен ${process.env.SEPARATOR} ${process.env.NEXT_PUBLIC_WEBSITE_TITLE}`;
 
@@ -23,6 +24,7 @@ export default function AboutPage() {
       <Hero />
       <Portfolio />
       <TechStack />
+      <WorkProcess />
     </PageWrapper>
   );
 }
