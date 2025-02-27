@@ -9,13 +9,14 @@ type PageLinkIconProps = {
   link: string;
   icon: keyof typeof LucideIcons;
   className?: string;
-};
+} & React.ComponentPropsWithoutRef<"a">;
 
 export default function PageLinkIcon({
   text,
   link,
   icon,
   className,
+  ...props
 }: PageLinkIconProps) {
   return (
     <Link
@@ -24,6 +25,7 @@ export default function PageLinkIcon({
         "flex gap-2 items-center w-fit text-xl text-white bg-primary hover:bg-secondary rounded-lg py-4 px-10 duration-300",
         className
       )}
+      {...props}
     >
       <ClientIcon name={icon} />
       <span>{text}</span>
