@@ -12,12 +12,12 @@ const navbarItems: NavbarItem[] = [
     link: "/",
   },
   {
-    text: "Сайт за обяви",
-    link: "/services/creation-of-a-classifieds-website",
-  },
-  {
     text: "За мен",
     link: "/about",
+  },
+  {
+    text: "Сайт за обяви",
+    link: "/services/creation-of-a-classifieds-website",
   },
   {
     text: "Контакти",
