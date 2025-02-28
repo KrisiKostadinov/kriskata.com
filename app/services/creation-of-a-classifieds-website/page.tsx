@@ -5,6 +5,7 @@ import PriceSection from "@/app/services/creation-of-a-classifieds-website/_comp
 import Plan from "@/app/services/creation-of-a-classifieds-website/_components/plan";
 import CustomCallToAction from "@/app/services/creation-of-a-classifieds-website/_components/custom-call-to-action";
 import HostingAndDomain from "@/app/services/creation-of-a-classifieds-website/_components/hosting-and-domain";
+import Support from "@/app/services/creation-of-a-classifieds-website/_components/support";
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <PriceSection />
       <Plan />
       <HostingAndDomain />
+      <Support />
       <CustomCallToAction />
     </PageWrapper>
   );
