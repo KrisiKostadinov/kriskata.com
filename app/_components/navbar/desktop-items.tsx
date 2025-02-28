@@ -1,13 +1,19 @@
+import type { NavbarItem as NavbarItemType } from "@/app/_components/navbar";
 import { NavbarItem } from "@/app/_components/navbar/navbar-item";
 
-type DesktopItemsProps = {} & React.ComponentPropsWithoutRef<"ul">;
+type DesktopItemsProps = {
+  navbarItems: NavbarItemType[];
+} & React.ComponentPropsWithoutRef<"ul">;
 
-export default function DesktopItems({ ...props }: DesktopItemsProps) {
+export default function DesktopItems({
+  navbarItems,
+  ...props
+}: DesktopItemsProps) {
   return (
     <ul {...props}>
-      <NavbarItem text="Начало" link="/" />
-      <NavbarItem text="За мен" link="/about" />
-      <NavbarItem text="Контакти" link="/contacts" />
+      {navbarItems.map((navbarItem, index) => (
+        <NavbarItem text={navbarItem.text} link={navbarItem.link} key={index} />
+      ))}
     </ul>
   );
 }

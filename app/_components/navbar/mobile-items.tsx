@@ -3,12 +3,18 @@
 import { useState } from "react";
 import { MenuIcon } from "lucide-react";
 
+import { NavbarItem as NavbarItemType } from "@/app/_components/navbar";
 import { cn, formatPhoneNumber } from "@/lib/utils";
 import { NavbarItem } from "@/app/_components/navbar/navbar-item";
 
-type MobileItemsProps = {} & React.ComponentPropsWithoutRef<"div">;
+type MobileItemsProps = {
+  navbarItems: NavbarItemType[];
+} & React.ComponentPropsWithoutRef<"div">;
 
-export default function MobileItems({ ...props }: MobileItemsProps) {
+export default function MobileItems({
+  navbarItems,
+  ...props
+}: MobileItemsProps) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -32,28 +38,18 @@ export default function MobileItems({ ...props }: MobileItemsProps) {
           open ? "translate-x-0" : "translate-x-full"
         )}
       >
-        <div className="mb-5 text-lg">
-          Уеб програмист на свободна практика
-        </div>
+        <div className="mb-5 text-lg">Уеб програмист на свободна практика</div>
+        
         <ul className="space-y-2">
-          <NavbarItem
-            text="Начало"
-            link="/"
-            className="bg-gray-100 rounded"
-            onClick={() => setOpen(!open)}
-          />
-          <NavbarItem
-            text="За мен"
-            link="/about"
-            className="bg-gray-100 rounded"
-            onClick={() => setOpen(!open)}
-          />
-          <NavbarItem
-            text="Контакти"
-            link="/contacts"
-            className="bg-gray-100 rounded"
-            onClick={() => setOpen(!open)}
-          />
+          {navbarItems.map((navbarItem, index) => (
+            <NavbarItem
+              text={navbarItem.text}
+              link={navbarItem.link}
+              className="bg-gray-100 rounded"
+              onClick={() => setOpen(!open)}
+              key={index}
+            />
+          ))}
           <NavbarItem
             text={formatPhoneNumber(
               process.env.NEXT_PUBLIC_ADMIN_SUPPORT_PHONE as string
