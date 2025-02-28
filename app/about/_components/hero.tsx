@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <header className="relative w-full min-h-[600px] py-10flex flex-col gap-10">
+    <header className="relative w-full py-10flex flex-col gap-10">
       <div className="w-full h-full flex justify-center items-center bg-black relative py-10">
         <Image
           src="/images/programming.png"

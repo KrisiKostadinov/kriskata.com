@@ -7,8 +7,8 @@ export default function PriceSection() {
   return (
     <section id="price" className="bg-white">
       <PageHeading tag="h2" text="Каква е цената?" />
-      <div className="container mx-auto py-5 md:py-10 grid lg:grid-cols-2 items-center gap-5 max-md:px-5">
-        <div className="text-lg space-y-5 max-md:order-2">
+      <div className="container mx-auto py-5 md:py-10 grid lg:grid-cols-2 items-center gap-5 px-5">
+        <div className="text-lg space-y-5 max-md:order-2 max-lg:text-center">
           <p>
             За съжаление, не мога да Ви предложа точна цена предварително, тъй
             като тя зависи изцяло от сложността и изискванията на Вашия проект.

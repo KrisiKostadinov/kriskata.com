@@ -15,7 +15,7 @@ export default function Functionalities() {
           loading="lazy"
           className="mx-auto"
         />
-        <div className="text-lg space-y-5">
+        <div className="text-lg space-y-5 max-lg:text-center">
           <p>
             Услугата включва изработка на уеб сайт за обяви с удобен дизайн и
             много лесно управление. Ще можете да го управлявате, без да имате
