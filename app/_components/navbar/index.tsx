@@ -16,6 +16,10 @@ const navbarItems: NavbarItem[] = [
     link: "/about",
   },
   {
+    text: "Фирмен сайт",
+    link: "/services/creation-of-a-company-website",
+  },
+  {
     text: "Сайт за обяви",
     link: "/services/creation-of-a-classifieds-website",
   },

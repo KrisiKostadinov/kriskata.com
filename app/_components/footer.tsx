@@ -23,6 +23,11 @@ export default function Footer() {
             <h2 className="text-2xl font-semibold">Бързи връзки</h2>
             <ul className="space-y-2 text-lg">
               <FooterLink
+                title={`Професионална изработка фирмен сайт ${suffix}`}
+                text="Изработка на фирмен сайт"
+                link="/services/creation-of-a-company-website"
+              />
+              <FooterLink
                 title={`Професионална изработка на сайт за обяви ${suffix}`}
                 text="Изработка на сайт за обяви"
                 link="/services/creation-of-a-classifieds-website"
