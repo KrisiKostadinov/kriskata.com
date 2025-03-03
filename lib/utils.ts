@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatPhoneNumber(phoneNumber: string): string {
-  let cleaned = phoneNumber.replace(/\D/g, "");
+  const cleaned = phoneNumber.replace(/\D/g, "");
 
   if (cleaned.length === 10) {
     return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3, 6)}-${cleaned.slice(
