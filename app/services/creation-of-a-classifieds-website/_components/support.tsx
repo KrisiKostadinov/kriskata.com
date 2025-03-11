@@ -8,7 +8,7 @@ export default function Support() {
       <PageHeading text="Поддръжка на сайта" tag="h2" />
       <div className="container mx-auto grid lg:grid-cols-2 items-center lg:gap-10 px-5">
         <Image
-          src={"/illustrations/hosting.svg"}
+          src={"/illustrations/support.svg"}
           alt="Поддръжка на сайта"
           width={600}
           height={400}
